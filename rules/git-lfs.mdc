@@ -1,0 +1,21 @@
+---
+description: Guidelines for using Git Large File Storage
+globs: 
+alwaysApply: false
+---
+best_practices:
+  - command: "git lfs track \"*.ext\""
+    description: "Track large files by extension"
+  - command: "git add .gitattributes"
+    description: "Commit LFS configuration"
+recommended_patterns:
+  - "*.psd"
+  - "*.zip"
+  - "*.iso"
+  - "*.bin"
+setup:
+  - "Install Git LFS"
+  - "Initialize in repository"
+  - "Configure tracking patterns"
+severity: warning
+category: git-windows 

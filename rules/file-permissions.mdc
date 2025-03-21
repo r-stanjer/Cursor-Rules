@@ -1,0 +1,12 @@
+---
+description: Guidelines for handling file permissions in Git on Windows
+globs: 
+alwaysApply: false
+---
+best_practices:
+  - command: "git update-index --chmod=+x <file>"
+    description: "Explicitly set executable bit for files"
+notes:
+  - "Be mindful of executable bit issues when working across different operating systems"
+severity: warning
+category: git-windows 

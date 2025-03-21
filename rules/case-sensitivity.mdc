@@ -1,0 +1,13 @@
+---
+description: Guidelines for handling case sensitivity in Git on Windows
+globs: 
+alwaysApply: false
+---
+best_practices:
+  - "Maintain consistent case in filenames"
+  - "Avoid having files that differ only by case"
+examples:
+  avoid:
+    - "MyFile.txt and myfile.txt in same directory"
+severity: error
+category: git-windows 
