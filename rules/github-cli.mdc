@@ -1,0 +1,41 @@
+---
+description: Guidelines for using the GitHub CLI (gh) for GitHub-specific operations
+globs: 
+alwaysApply: false
+---
+best_practices:
+  - "Use gh CLI for GitHub operations instead of web interface or direct Git commands"
+  - "Install gh CLI from https://cli.github.com/"
+examples:
+  repository_management:
+    - task: "Creating a repository"
+      preferred: "gh repo create"
+      instead_of: "Using web interface"
+    - task: "Cloning a repository"
+      preferred: "gh repo clone"
+      instead_of: "git clone"
+  pull_requests:
+    - task: "Creating a pull request"
+      preferred: "gh pr create"
+      instead_of: "git push + web UI"
+    - task: "Reviewing pull requests"
+      preferred: "gh pr list"
+      instead_of: "Using web interface"
+  issues:
+    - task: "Viewing issues"
+      preferred: "gh issue list"
+      instead_of: "Using web interface"
+    - task: "Creating issues"
+      preferred: "gh issue create"
+      instead_of: "Using web interface"
+rationale:
+  - "Provides more integrated and streamlined experience for GitHub-specific tasks"
+  - "Simplifies scripting and automation of GitHub workflows"
+  - "Reduces context switching between terminal and browser"
+  - "Enables consistent workflow across different environments"
+setup:
+  installation:
+    url: "https://cli.github.com/"
+    authentication: "gh auth login"
+severity: recommendation
+category: github-workflow 
