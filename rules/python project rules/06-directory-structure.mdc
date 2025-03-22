@@ -1,0 +1,149 @@
+---
+description: 
+globs: setup.py,requirements.txt,.gitignore,pyproject.toml
+alwaysApply: false
+---
+---
+globs: [setup.py, requirements.txt, .gitignore, pyproject.toml]
+alwaysApply: false
+---
+ # Directory Structure Rule
+
+## Overview
+This rule defines the standard directory structure for Python game projects, ensuring organized and maintainable codebases.
+
+## Root Directory
+```
+project_name/
+├── src/
+├── tests/
+├── docs/
+├── assets/
+├── .cursor/
+├── .gitignore
+├── README.md
+├── requirements.txt
+└── setup.py
+```
+
+## Source Code Structure
+```
+src/
+├── __init__.py
+├── config.py
+├── ui_components.py
+├── puzzle_core.py
+├── events.py
+├── renderer.py
+├── game_manager.py
+└── main.py
+```
+
+## Test Directory Structure
+```
+tests/
+├── __init__.py
+├── test_config.py
+├── test_ui_components.py
+├── test_puzzle_core.py
+├── test_events.py
+├── test_renderer.py
+└── test_game_manager.py
+```
+
+## Documentation Structure
+```
+docs/
+├── api/
+├── user_guide/
+├── development/
+└── Graphical WorkFlow Images/
+    ├── ascii_diagram.txt
+    └── mermaid_diagram.md
+```
+
+## Assets Structure
+```
+assets/
+├── images/
+├── fonts/
+├── sounds/
+└── data/
+```
+
+## Cursor Configuration
+```
+.cursor/
+└── rules/
+    └── python project rules/
+        ├── 01-module-breakdown.mdc
+        ├── 02-documentation-graphics.mdc
+        ├── 03-mermaid-formatting.mdc
+        ├── 04-readme-structure.mdc
+        ├── 05-config-representation.mdc
+        ├── 06-directory-structure.mdc
+        ├── 07-naming-conventions.mdc
+        └── 08-dependency-management.mdc
+```
+
+## Directory Guidelines
+
+1. **Root Directory**
+   - Contains project-level configuration files
+   - Main README and setup files
+   - Version control configuration
+   - Environment configuration
+
+2. **Source Directory (src/)**
+   - All source code modules
+   - Clear module separation
+   - Logical file organization
+   - Module initialization files
+
+3. **Tests Directory (tests/)**
+   - Mirror source structure
+   - One test file per module
+   - Test resources and fixtures
+   - Test configuration files
+
+4. **Documentation Directory (docs/)**
+   - API documentation
+   - User guides
+   - Development guides
+   - Visual documentation
+
+5. **Assets Directory (assets/)**
+   - Game resources
+   - Organized by type
+   - Version controlled
+   - Proper naming scheme
+
+6. **Cursor Rules (.cursor/rules/)**
+   - Project-specific rules
+   - Development guidelines
+   - Formatting standards
+   - Best practices
+
+## Naming Guidelines
+1. Use lowercase for directories
+2. Use underscores for spaces
+3. Keep names descriptive
+4. Maintain consistency
+5. Follow Python conventions
+
+## Maintenance Requirements
+1. Keep directory structure clean
+2. Remove unused files
+3. Update documentation
+4. Maintain README files
+5. Review periodically
+
+## Best Practices
+1. Follow single responsibility principle
+2. Maintain clear separation of concerns
+3. Use appropriate file extensions
+4. Include necessary __init__.py files
+5. Document directory purposes
+6. Control access permissions
+7. Implement backup strategies
+8. Consider scalability 

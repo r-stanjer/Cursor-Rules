@@ -1,0 +1,108 @@
+---
+description: 
+globs: config.py,**/config/*.py,**/settings/*.py,**/configuration/*.py
+alwaysApply: false
+---
+---
+globs: [config.py, **/config/*.py, **/settings/*.py, **/configuration/*.py]
+alwaysApply: false
+---
+ # Configuration File Representation Rule
+
+## Overview
+This rule defines the standard structure and organization for configuration files in Python projects, ensuring consistency and maintainability.
+
+## File Structure
+1. **Module Header**
+   - Module docstring with purpose
+   - Import statements
+   - Version information
+   - Author information
+
+2. **Constants Organization**
+   - Group related constants
+   - Use clear, descriptive names
+   - Include type hints
+   - Add explanatory comments
+
+3. **Configuration Categories**
+   - Window/Display settings
+   - UI element properties
+   - Game mechanics parameters
+   - Visual styling constants
+   - Audio settings
+   - Debug options
+
+## Naming Conventions
+1. **Constant Names**
+   - All uppercase with underscores
+   - Descriptive and clear purpose
+   - Avoid abbreviations
+   - Include units in name if applicable
+
+2. **Category Prefixes**
+   - Use meaningful prefixes
+   - Group related constants
+   - Maintain consistency
+   - Document prefix meanings
+
+## Value Formatting
+1. **Numbers**
+   - Use appropriate data types
+   - Include units in comments
+   - Group related values
+   - Use clear decimal places
+
+2. **Colors**
+   - RGB or RGBA tuples
+   - Hexadecimal values
+   - Named color constants
+   - Color scheme organization
+
+3. **Strings**
+   - Use f-strings where appropriate
+   - Include encoding information
+   - Document special characters
+   - Handle multi-language support
+
+## Documentation Requirements
+1. **Inline Comments**
+   - Explain non-obvious values
+   - Document units and ranges
+   - Note dependencies
+   - Include update history
+
+2. **Section Headers**
+   - Clear category markers
+   - Purpose description
+   - Related modules
+   - Usage examples
+
+## Maintenance Guidelines
+1. **Version Control**
+   - Track configuration changes
+   - Document major updates
+   - Maintain backwards compatibility
+   - Include migration notes
+
+2. **Testing**
+   - Validate value ranges
+   - Check type consistency
+   - Verify dependencies
+   - Test edge cases
+
+3. **Updates**
+   - Regular review process
+   - Performance impact assessment
+   - Dependency updates
+   - Documentation updates
+
+## Best Practices
+1. Use type hints for clarity
+2. Group related constants
+3. Document default values
+4. Include validation checks
+5. Maintain consistent formatting
+6. Consider configuration file alternatives
+7. Implement error handling
+8. Support environment overrides 

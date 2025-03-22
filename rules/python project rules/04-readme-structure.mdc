@@ -1,0 +1,92 @@
+---
+description: 
+globs: README.md,**/README.md
+alwaysApply: false
+---
+---
+globs: [README.md, **/README.md]
+alwaysApply: false
+---
+ # README Structure Rule
+
+## Overview
+This rule defines the standard structure and content requirements for README files in Python projects.
+
+## Basic Structure
+1. **Project Title**
+   - Clear, descriptive name
+   - Brief one-line description
+   - Status badges if applicable
+
+2. **Project Description**
+   - Overview of project purpose
+   - Key features list
+   - Target audience
+   - Technologies used
+
+3. **Visual Preview**
+   - Screenshots or GIFs of the application
+   - Key interface elements
+   - Important functionality demonstrations
+
+4. **Installation**
+   - Prerequisites
+   - Step-by-step installation guide
+   - Virtual environment setup
+   - Dependencies installation
+
+5. **Usage**
+   - Basic usage instructions
+   - Command-line arguments
+   - Configuration options
+   - Example use cases
+
+6. **Project Structure**
+   - Directory layout
+   - Module organization
+   - Key file descriptions
+   - Architecture overview
+
+7. **Development**
+   - Setup instructions for developers
+   - Testing procedures
+   - Contribution guidelines
+   - Code style requirements
+
+8. **License**
+   - License type
+   - Usage restrictions
+   - Attribution requirements
+
+## Content Guidelines
+1. **Writing Style**
+   - Clear and concise
+   - Professional tone
+   - Proper formatting
+   - Consistent terminology
+
+2. **Code Examples**
+   - Use proper code blocks
+   - Include comments
+   - Show expected output
+   - Keep examples simple
+
+3. **Documentation Links**
+   - Link to detailed documentation
+   - Reference external resources
+   - Maintain working links
+   - Version-specific information
+
+## Maintenance
+1. Keep installation instructions current
+2. Update screenshots when UI changes
+3. Verify all links periodically
+4. Update version numbers
+5. Maintain changelog if applicable
+
+## Format Requirements
+1. Use Markdown formatting
+2. Maintain consistent heading levels
+3. Include table of contents for longer READMEs
+4. Use appropriate emphasis (bold, italic)
+5. Include proper line breaks and spacing 

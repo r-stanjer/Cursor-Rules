@@ -1,0 +1,85 @@
+---
+description: 
+globs: **/Graphical WorkFlow Images/*.md,**/*mermaid*.md
+alwaysApply: false
+---
+---
+globs: [**/Graphical WorkFlow Images/*.md, **/*mermaid*.md]
+alwaysApply: false
+---
+ # Mermaid Diagram Formatting Rule
+
+## Overview
+This rule defines the specific formatting standards for Mermaid diagrams in Python projects, ensuring consistent visual representation.
+
+## Theme Configuration
+```mermaid
+%%{init: {
+  'theme': 'dark',
+  'themeVariables': {
+    'primaryColor': '#2D333B',
+    'primaryTextColor': '#adbac7',
+    'primaryBorderColor': '#444c56',
+    'lineColor': '#768390',
+    'secondaryColor': '#22272e',
+    'tertiaryColor': '#22272e'
+  }
+}}%%
+```
+
+## Layout Settings
+```mermaid
+flowchart: {
+  'nodeSpacing': 40,
+  'rankSpacing': 40,
+  'curve': 'basis'
+}
+```
+
+## Color Scheme
+1. **Module Node Colors**
+   - Config/Render: Blue (#539bf5)
+   - UI: Green (#57ab5a)
+   - Puzzle: Purple (#986ee2)
+   - Events/Game: Yellow/Gold (#c69026)
+   - Main: Green (#57ab5a)
+
+2. **Box Fill Colors**
+   - Node fill: #22272e
+   - Subgraph fill: #2D333B
+
+3. **Text Colors**
+   - Primary text: #adbac7
+   - Border lines: #444c56
+
+## Box Styling
+1. **Module Nodes**
+   - Stroke width: 1px
+   - Consistent spacing
+   - Clear labels
+
+2. **Subgraph Containers**
+   - Stroke width: 2px
+   - Colored outlines matching module theme
+   - Equal internal spacing
+   - No excess vertical space
+
+## Connection Styling
+1. **Arrows**
+   - Color: #768390
+   - Stroke width: 1.5px
+   - Clear directionality
+
+2. **Layout**
+   - Left to right flow
+   - Minimal crossing
+   - Logical grouping
+
+## Implementation Guidelines
+1. Use consistent spacing throughout
+2. Maintain color scheme across all diagrams
+3. Ensure readable text contrast
+4. Keep subgraph sizes proportional to content
+5. Use clear and consistent naming
+6. Group related components together
+7. Minimize white space while maintaining readability 

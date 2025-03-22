@@ -1,0 +1,18 @@
+---
+description: Guidelines for .gitignore configuration on Windows
+globs: 
+alwaysApply: false
+---
+best_practices:
+  - command: "git config --global core.excludesfile"
+    description: "Set up global excludes file"
+recommended_excludes:
+  - "Build artifacts"
+  - "Log files"
+  - "System-specific files"
+  - "IDE configuration files"
+configuration:
+  global_excludes:
+    path: "~/.gitignore_global"
+severity: warning
+category: git-windows 

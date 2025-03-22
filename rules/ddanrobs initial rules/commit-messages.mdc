@@ -1,0 +1,24 @@
+---
+description: Guidelines for writing Git commit messages
+globs: 
+alwaysApply: false
+---
+best_practices:
+  - "Write concise summary in first line"
+  - "Add detailed body with reasoning"
+  - "Reference issue/PR numbers"
+format:
+  summary:
+    max_length: 50
+    style: "imperative mood"
+  body:
+    max_length: 72
+    content:
+      - "Detailed explanation"
+      - "Reasoning for changes"
+      - "Breaking changes"
+references:
+  - "Issue numbers: #123"
+  - "Pull requests: PR #456"
+severity: warning
+category: git-best-practices 

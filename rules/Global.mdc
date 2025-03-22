@@ -1,0 +1,6 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+When working on python projects, reference "C:\Users\rober\GitHub Repositories\Python Testing\Python-HelloWorld\.cursor\rules\python project rules\00-python-rules-index.mdc". This is an index for other python rules, that are found in the same directory, that should be applied if a python project is being worked on.
