@@ -7,75 +7,111 @@ alwaysApply: false
 globs: [**/Graphical WorkFlow Images/*.txt, **/Graphical WorkFlow Images/*.md]
 alwaysApply: false
 ---
- # Module Breakdown Rule
+# Documentation Graphics Rule
 
 ## Overview
-This rule defines the standard module structure for Python game projects, based on the Pyramid Math Puzzle implementation.
+This rule defines the required graphical documentation for Python game projects, ensuring consistent visualization of system architecture and data flow.
 
-## Module Structure
-1. **Core Modules Required**
-   - `config.py`: Central configuration and constants
-   - `ui_components.py`: Reusable UI elements
-   - `puzzle_core.py`: Core game logic
-   - `events.py`: Event handling system
-   - `renderer.py`: Graphics rendering
-   - `game_manager.py`: Game state and flow
-   - `main.py`: Entry point and initialization
+## Required Documentation Files
 
-## Module Responsibilities
+### 1. ASCII Diagram (ascii_diagram.txt)
+- Must include:
+  - Component interaction diagram
+  - Data flow representation
+  - System architecture overview
+  - Module dependencies
+  - Flow sequence numbering
 
-### config.py
-- Game configuration constants
-- UI settings and layouts
-- Color definitions
-- Font configurations
-- All configurable values centralized
+- Formatting:
+  ```
+  +--------+     +--------+
+  | Module |---->| Module |
+  +--------+     +--------+
+  ```
+  - Use ASCII characters for boxes and arrows
+  - Maintain consistent spacing
+  - Include brief descriptions
+  - Number flow sequences
 
-### ui_components.py
-- Reusable UI elements
-- Button implementations
-- Input field handling
-- Slider controls
-- Popup management
+### 2. Mermaid Diagram (mermaid_diagram.md)
+- Must follow `03-mermaid-formatting.mdc` rules
+- Required sections:
+  - Theme configuration block
+  - Class/component definitions
+  - Relationship mappings
+  - Module color coding
+  - Descriptive notes
 
-### puzzle_core.py
-- Core game logic
-- Game-specific implementations
-- Solution validation
-- Core mechanics
+## Directory Structure
 
-### events.py
-- Event handling system
-- Input processing
-- State transitions
-- User interaction management
+project_name/
+└── docs/
+└── Graphical WorkFlow Images/
+├── ascii_diagram.txt
+└── mermaid_diagram.md
 
-### renderer.py
-- Game rendering system
-- UI element rendering
-- Popup display
-- Visual effects
+## ASCII Diagram Standards
+1. **Component Boxes**
+   - Single-line borders (+, -, |)
+   - Consistent width and height
+   - Clear labels
+   - Brief descriptions
 
-### game_manager.py
-- Game state management
-- Score tracking
-- Main game loop
-- Game flow control
+2. **Connections**
+   - Arrows using >, <, ^, v
+   - Data flow direction
+   - Relationship types
+   - Clear paths
 
-### main.py
-- Main entry point
-- Game initialization
-- Module coordination
+3. **Layout**
+   - Left-to-right or top-to-bottom flow
+   - Logical grouping
+   - Minimal crossing lines
+   - Even spacing
 
-## Module Dependencies
-- Config module should have no dependencies on other modules
-- Main module may depend on all other modules
-- Other modules should minimize cross-dependencies
-- Circular dependencies must be avoided
+## Mermaid Implementation
+1. **Class Diagrams**
+   - All major classes
+   - Important attributes
+   - Public methods
+   - Relationships
+   - Color coding per module type
 
-## Implementation Guidelines
-1. Each module should have a single, clear responsibility
-2. Modules should be loosely coupled
-3. Dependencies should flow from higher-level modules to lower-level ones
-4. Common functionality should be extracted to appropriate modules
-5. Each module should have clear entry points and interfaces 
+2. **Required Elements**
+   - Theme configuration
+   - Module colors
+   - Connection styling
+   - Descriptive notes
+   - Type annotations
+
+## Content Requirements
+1. **Architectural Overview**
+   - System components
+   - Data flow
+   - Dependencies
+   - Entry points
+
+2. **Component Details**
+   - Responsibilities
+   - Interactions
+   - State management
+   - Key operations
+
+3. **Flow Documentation**
+   - Sequence numbering
+   - State transitions
+   - Error handling
+   - User interactions
+
+## Maintenance Guidelines
+1. Update diagrams when:
+   - Architecture changes
+   - New components added
+   - Flow patterns change
+   - Dependencies modified
+
+2. Ensure:
+   - Diagram accuracy
+   - Consistent styling
+   - Clear documentation
+   - Up-to-date relationships

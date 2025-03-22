@@ -1,7 +1,12 @@
 ---
+description: 
+globs: 
+alwaysApply: true
+---
+---
 description: Guidelines for avoiding unnecessary piping to cat with Git commands
 globs: 
-alwaysApply: false
+alwaysApply: true
 ---
 best_practices:
   - "Do not pipe Git command output to cat"
