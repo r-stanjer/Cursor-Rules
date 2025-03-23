@@ -17,7 +17,7 @@ This rule defines the standard module structure for Python game projects, based 
 1. **Core Modules Required**
    - `config.py`: Central configuration and constants
    - `ui_components.py`: Reusable UI elements
-   - `puzzle_core.py`: Core game logic
+   - `game_core.py`: Core game logic
    - `events.py`: Event handling system
    - `renderer.py`: Graphics rendering
    - `game_manager.py`: Game state and flow

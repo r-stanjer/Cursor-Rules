@@ -11,7 +11,7 @@ alwaysApply: true
  # Python Project Rules Index
 
 ## Overview
-These rules define the standard structure and organization for Python game projects, based on the Pyramid Math Puzzle implementation pattern.
+These rules define the standard structure and organization for Python game projects, based on the Pyramid Math Puzzle implementation pattern. The rules can be found within .cursor\rules\python project rules, which is also where this current file is located.
 
 ## When to Apply
 - When creating new Python projects

@@ -1,0 +1,61 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+ ---
+description: Guidelines for formatting PowerShell commands correctly. Apply these guidelines whenever constructing PowerShell commands in any context.
+globs: ["*.ps1", "*.psm1", "*.psd1"]
+alwaysApply: true
+---
+
+# PowerShell Command Formatting Guidelines
+
+## Command Chaining
+1. **Sequential Commands**
+   - Use semicolons: `command1; command2`
+   - For conditional execution: `command1; if ($?) { command2 }`
+   - Avoid using `&&` operator
+
+## Directory Operations
+1. **Creating Directories**
+   - Use: `New-Item -ItemType Directory -Path "path" -Force`
+   - Not: `mkdir path`
+
+2. **Changing Directories**
+   - Use: `Set-Location` or `cd`
+   - For paths with spaces: `Set-Location -Path "path with spaces"`
+
+## Path Handling
+1. **Path Separators**
+   - Use backslashes for Windows paths
+   - Use `-Path` parameter for clarity
+   - Quote paths with spaces
+
+## Error Handling
+1. **Checking Success**
+   - Use: `if ($?) { ... }`
+   - Use: `try/catch` for complex operations
+   - Check `$LASTEXITCODE` for external commands
+
+## Best Practices
+1. Use PowerShell cmdlets instead of aliases
+2. Quote string parameters containing spaces
+3. Use proper parameter names for clarity
+4. Use proper PowerShell operators (-eq, -lt, etc.)
+5. Use proper variable notation ($var)
+
+## Examples
+```powershell
+# Correct
+New-Item -ItemType Directory -Path "new_folder"; Set-Location -Path "new_folder"
+
+# Incorrect
+mkdir new_folder && cd new_folder
+```
+
+To implement this solution:
+
+1. Create the new rule file in `.cursor/rules/ddanrobs initial rules/powershell-command-formatting.mdc`
+2. Set `alwaysApply: true` to ensure it's always considered
+3. Reference this rule when working with PowerShell commands
