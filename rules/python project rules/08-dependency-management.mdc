@@ -1,0 +1,132 @@
+---
+description: 
+globs: requirements.txt,requirements/*.txt,requirements-*.txt,Pipfile,pyproject.toml,setup.py,environment.yml
+alwaysApply: false
+---
+---
+globs: [requirements.txt, requirements/*.txt, requirements-*.txt, Pipfile, pyproject.toml, setup.py, environment.yml]
+alwaysApply: false
+---
+ # Dependency Management Rule
+
+## Overview
+This rule defines the standard practices for managing dependencies in Python game projects, ensuring reproducible environments and maintainable codebases.
+
+## Virtual Environment
+1. **Creation and Activation**
+   - Use venv or virtualenv
+   - Create per project
+   - Document activation steps
+   - Include in .gitignore
+
+2. **Naming Convention**
+   - Clear project relation
+   - Version indication
+   - Environment type
+   - Consistent format
+
+## Requirements File
+1. **Structure**
+   - Package names
+   - Version specifications
+   - Comments for context
+   - Grouped by purpose
+
+2. **Version Pinning**
+   - Exact versions
+   - Security updates
+   - Compatibility checks
+   - Update strategy
+
+3. **Organization**
+   - Core dependencies
+   - Development dependencies
+   - Optional features
+   - Test requirements
+
+## Package Management
+1. **Primary Tools**
+   - pip for installation
+   - pip-tools for management
+   - safety for security
+   - virtualenv for isolation
+
+2. **Version Control**
+   - Lock file usage
+   - Dependency tracking
+   - Update documentation
+   - Conflict resolution
+
+## Dependencies Documentation
+1. **README Section**
+   - Installation steps
+   - Version requirements
+   - Optional features
+   - Troubleshooting
+
+2. **Documentation Files**
+   - Dependency graph
+   - Update history
+   - Breaking changes
+   - Migration guides
+
+## Security
+1. **Vulnerability Checking**
+   - Regular scans
+   - Update policies
+   - Security patches
+   - Risk assessment
+
+2. **Version Control**
+   - CVE tracking
+   - Security updates
+   - Dependency audits
+   - Patch management
+
+## Maintenance
+1. **Regular Updates**
+   - Schedule reviews
+   - Test coverage
+   - Documentation updates
+   - Compatibility checks
+
+2. **Dependency Cleanup**
+   - Remove unused
+   - Consolidate similar
+   - Optimize imports
+   - Reduce complexity
+
+## Best Practices
+1. **Environment Management**
+   - Isolation principles
+   - Reproducibility
+   - Clear documentation
+   - Version control
+
+2. **Package Selection**
+   - Evaluate alternatives
+   - Community support
+   - Maintenance status
+   - License compliance
+
+3. **Version Control**
+   - Lock file usage
+   - Update strategy
+   - Conflict resolution
+   - Migration planning
+
+4. **Testing**
+   - Integration tests
+   - Dependency tests
+   - Version compatibility
+   - Security checks
+
+## Implementation Guidelines
+1. Use requirements.txt for production
+2. Include dev-requirements.txt
+3. Document setup procedures
+4. Maintain version history
+5. Regular security audits
+6. Test environment isolation
+7. Clear upgrade paths
+8. Dependency documentation 

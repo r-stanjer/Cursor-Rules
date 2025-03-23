@@ -1,0 +1,82 @@
+---
+description: 
+globs: main.py,config.py,ui_components.py,puzzle_core.py,events.py,renderer.py,game_manager.py
+alwaysApply: false
+---
+---
+globs: [main.py, config.py, ui_components.py, puzzle_core.py, events.py, renderer.py, game_manager.py]
+alwaysApply: false
+---
+
+# Module Breakdown Rule
+
+## Overview
+This rule defines the standard module structure for Python game projects, based on the Pyramid Math Puzzle implementation.
+
+## Module Structure
+1. **Core Modules Required**
+   - `config.py`: Central configuration and constants
+   - `ui_components.py`: Reusable UI elements
+   - `puzzle_core.py`: Core game logic
+   - `events.py`: Event handling system
+   - `renderer.py`: Graphics rendering
+   - `game_manager.py`: Game state and flow
+   - `main.py`: Entry point and initialization
+
+## Module Responsibilities
+
+### config.py
+- Game configuration constants
+- UI settings and layouts
+- Color definitions
+- Font configurations
+- All configurable values centralized
+
+### ui_components.py
+- Reusable UI elements
+- Button implementations
+- Input field handling
+- Slider controls
+- Popup management
+
+### puzzle_core.py
+- Core game logic
+- Game-specific implementations
+- Solution validation
+- Core mechanics
+
+### events.py
+- Event handling system
+- Input processing
+- State transitions
+- User interaction management
+
+### renderer.py
+- Game rendering system
+- UI element rendering
+- Popup display
+- Visual effects
+
+### game_manager.py
+- Game state management
+- Score tracking
+- Main game loop
+- Game flow control
+
+### main.py
+- Main entry point
+- Game initialization
+- Module coordination
+
+## Module Dependencies
+- Config module should have no dependencies on other modules
+- Main module may depend on all other modules
+- Other modules should minimize cross-dependencies
+- Circular dependencies must be avoided
+
+## Implementation Guidelines
+1. Each module should have a single, clear responsibility
+2. Modules should be loosely coupled
+3. Dependencies should flow from higher-level modules to lower-level ones
+4. Common functionality should be extracted to appropriate modules
+5. Each module should have clear entry points and interfaces 

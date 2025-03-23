@@ -1,12 +1,7 @@
 ---
-description: 
-globs: 
-alwaysApply: false
----
----
 description: Guidelines for setting up Git tab completion in PowerShell
 globs: 
-alwaysApply: true
+alwaysApply: false
 ---
 best_practices:
   - command: "Import-Module posh-git"

@@ -1,0 +1,117 @@
+---
+description: 
+globs: **/Graphical WorkFlow Images/*.txt,**/Graphical WorkFlow Images/*.md
+alwaysApply: false
+---
+---
+globs: [**/Graphical WorkFlow Images/*.txt, **/Graphical WorkFlow Images/*.md]
+alwaysApply: false
+---
+# Documentation Graphics Rule
+
+## Overview
+This rule defines the required graphical documentation for Python game projects, ensuring consistent visualization of system architecture and data flow.
+
+## Required Documentation Files
+
+### 1. ASCII Diagram (ascii_diagram.txt)
+- Must include:
+  - Component interaction diagram
+  - Data flow representation
+  - System architecture overview
+  - Module dependencies
+  - Flow sequence numbering
+
+- Formatting:
+  ```
+  +--------+     +--------+
+  | Module |---->| Module |
+  +--------+     +--------+
+  ```
+  - Use ASCII characters for boxes and arrows
+  - Maintain consistent spacing
+  - Include brief descriptions
+  - Number flow sequences
+
+### 2. Mermaid Diagram (mermaid_diagram.md)
+- Must follow `03-mermaid-formatting.mdc` rules
+- Required sections:
+  - Theme configuration block
+  - Class/component definitions
+  - Relationship mappings
+  - Module color coding
+  - Descriptive notes
+
+## Directory Structure
+
+project_name/
+└── docs/
+└── Graphical WorkFlow Images/
+├── ascii_diagram.txt
+└── mermaid_diagram.md
+
+## ASCII Diagram Standards
+1. **Component Boxes**
+   - Single-line borders (+, -, |)
+   - Consistent width and height
+   - Clear labels
+   - Brief descriptions
+
+2. **Connections**
+   - Arrows using >, <, ^, v
+   - Data flow direction
+   - Relationship types
+   - Clear paths
+
+3. **Layout**
+   - Left-to-right or top-to-bottom flow
+   - Logical grouping
+   - Minimal crossing lines
+   - Even spacing
+
+## Mermaid Implementation
+1. **Class Diagrams**
+   - All major classes
+   - Important attributes
+   - Public methods
+   - Relationships
+   - Color coding per module type
+
+2. **Required Elements**
+   - Theme configuration
+   - Module colors
+   - Connection styling
+   - Descriptive notes
+   - Type annotations
+
+## Content Requirements
+1. **Architectural Overview**
+   - System components
+   - Data flow
+   - Dependencies
+   - Entry points
+
+2. **Component Details**
+   - Responsibilities
+   - Interactions
+   - State management
+   - Key operations
+
+3. **Flow Documentation**
+   - Sequence numbering
+   - State transitions
+   - Error handling
+   - User interactions
+
+## Maintenance Guidelines
+1. Update diagrams when:
+   - Architecture changes
+   - New components added
+   - Flow patterns change
+   - Dependencies modified
+
+2. Ensure:
+   - Diagram accuracy
+   - Consistent styling
+   - Clear documentation
+   - Up-to-date relationships
